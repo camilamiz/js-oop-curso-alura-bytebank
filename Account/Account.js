@@ -37,7 +37,7 @@ export class Account {
   }
 
   transfer(value, account) {
-    this._draw(value);
-    account._balance += value;
+    const drawnValue = this.draw(value);
+    account.deposit(value);
   }
 }
