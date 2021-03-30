@@ -1,3 +1,4 @@
+import { Account } from "./Account/Account.js";
 import { CheckingAccount } from "./Account/CheckingAccount.js";
 import { SalaryAccount } from "./Account/SalaryAccount.js";
 import { SavingsAccount } from "./Account/SavingsAccount.js";
@@ -27,5 +28,5 @@ const salary = new SalaryAccount(client1, 1001);
 salary.deposit(2000);
 salary.draw(200);
 
-console.log(salary);
+console.log(Account.count);
 // console.log(account2);

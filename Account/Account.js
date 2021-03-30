@@ -1,4 +1,6 @@
 export class Account {
+  static count = 0;
+
   constructor(initialBalance, client, agency) {
     if (this.constructor == Account) {
       throw new Error("It is not possible to instantiate an Account object directly, because it is an abstract class.");
@@ -7,6 +9,8 @@ export class Account {
     this._balance = initialBalance;
     this._client = client;
     this._agency = agency;
+
+    Account.count += 1;
   }
 
   get client() {
