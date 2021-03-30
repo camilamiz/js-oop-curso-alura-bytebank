@@ -4,7 +4,7 @@ import { SavingsAccount } from "./Account/SavingsAccount.js";
 import { Client } from "./Client.js";
 import { Director } from "./Employee/Director.js";
 import { Manager } from "./Employee/Manager.js";
-import { AuthenticationSystem } from "./AuthenticationSystema.js";
+import { AuthenticationSystem } from "./AuthenticationSystem.js";
 
 // test client creation
 const client1 = new Client("Holden", 12345670088, "password")
