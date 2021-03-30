@@ -1,4 +1,5 @@
 import { CheckingAccount } from "./Account/CheckingAccount.js";
+import { SalaryAccount } from "./Account/SalaryAccount.js";
 import { SavingsAccount } from "./Account/SavingsAccount.js";
 import { Client } from "./Client.js";
 
@@ -22,5 +23,9 @@ savings.deposit(200);
 savings.draw(10);
 account2.transfer(100, savings);
 
-console.log(savings);
-console.log(account2);
+const salary = new SalaryAccount(client1, 1001);
+salary.deposit(2000);
+salary.draw(200);
+
+console.log(salary);
+// console.log(account2);
